@@ -1,5 +1,5 @@
 class MyCircularQueue:
-    def__init_(self, size: int):
+    def__init__(self, size: int):
         self.queue = [0] * size
         self.size = size
         self.front, self.rear = -1, -1
@@ -39,8 +39,6 @@ class MyCircularQueue:
     def is_full(self):
         return (self.front == 0 and self.rear == (self.size - 1)) or (self.front == (self.rear + 1) % self.size)
 
-
-# Do not change the following codeT
 operations = []
 for specific_operation in input().split(','):
     operations.append(specific_operation.strip())
